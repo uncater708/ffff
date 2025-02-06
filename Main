@@ -26,9 +26,9 @@ end
 -- If the place is allowed, execute the teleport
 if isPlaceAllowed then
     
-    print("Right")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/uncater708/ffff/refs/heads/main/fffffff"))()
 
 
 else
-    warn("This script can only run in specific places!")
+    warn("This script can only run in a Mission ")
 end
