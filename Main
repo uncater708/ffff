@@ -1,0 +1,34 @@
+local allowedPlaceIds = {
+    13379208636, -- [ðŸš€ UPDATE] Attack on Titan Revolution
+    13379349730, -- [AOT:R] Shiganshina
+    13904207646, -- [AOT:R] Trost Outskirts
+    14012874501, -- [AOT:R] Trost
+    14638336319, -- [AOT:R] Giant Forest
+    14932214603, -- [AOT:R] Training Grounds
+    15030367419, -- [AOT:R] Outside the Walls 1
+    15220308770, -- [AOT:R] Utgard Castle
+    15374465998, -- [AOT:R] Outside the Walls 2
+    15824912319, -- [AOT:R] Paths
+    17688739434  -- [AOT:R] Loading Docks
+}
+
+local currentPlaceId = game.PlaceId
+local isPlaceAllowed = false
+
+-- Check if the current place ID is in the allowed list
+for _, id in pairs(allowedPlaceIds) do
+    if currentPlaceId == id then
+        isPlaceAllowed = true
+        break
+    end
+end
+
+-- If the place is allowed, execute the teleport
+if isPlaceAllowed then
+    
+    print("Right")
+
+
+else
+    warn("This script can only run in specific places!")
+end
